@@ -1,6 +1,6 @@
 # NumDynamics: Advanced Random Number Generator 🎲
 
-NumDynamics is a sophisticated random number generation system that produces high-quality random numbers following various statistical distributions. Built with **C** for core functionality and **Python** for analysis and visualization, the system generates, analyzes, and visualizes random number distributions with precision and efficiency. The project combines the speed of C with Python's powerful data analysis capabilities to create a comprehensive random number generation and analysis toolkit.
+NumDynamics is a sophisticated random number generation system that produces high-quality random numbers following various statistical distributions. Built with **C** for core functionality and analysis and **Python** for visualization, the system generates, analyzes, and visualizes random number distributions with precision and efficiency. The project combines the speed and powerful data analysis capabilities of C with Python's visualization capabilities to create a comprehensive random number generation and analysis toolkit.
 
 ![C](https://img.shields.io/badge/C-Programming%20Language-blue)
 ![Python](https://img.shields.io/badge/Python-Data%20Analysis-yellow)
@@ -24,18 +24,24 @@ NumDynamics is a sophisticated random number generation system that produces hig
 - [Pre-configured Scenarios](#pre-configured-scenarios)
 - [Requirements](#requirements)
 - [Contributing](#contributing)
-- [Contact](#contact-)
+- [Contact](#contact)
 
 ---
 
 ## Key Features
 - **Multiple Distribution Types**: Generate numbers following various statistical distributions
 - **High-Performance C Core**: Optimized random number generation using C
-- **Statistical Analysis**: Comprehensive statistical calculations using Python
+- **Statistical Analysis**: Comprehensive statistical calculations using C
 - **Data Visualization**: Automated histogram generation for distribution analysis
 - **Organized Data Management**: Structured directory system for data storage
 - **Configurable Parameters**: Customizable distribution parameters for different scenarios
 - **Automated Workflow**: Single-command execution for generation, analysis, and visualization
+
+---
+
+<img width="293" alt="Screenshot 2025-01-18 at 6 43 09 PM" src="https://github.com/user-attachments/assets/d7cd5783-fb16-477d-86f4-a42c9e1d80e2" />
+<img width="293" alt="Screenshot 2025-01-18 at 6 43 24 PM" src="https://github.com/user-attachments/assets/33e4ad8e-aba3-4a2a-b4eb-971bbc4dd8f0" />
+<img width="303" alt="Screenshot 2025-01-18 at 6 43 38 PM" src="https://github.com/user-attachments/assets/d6c39bae-aaa9-488f-a291-b22cc274185f" />
 
 ---
 
@@ -62,11 +68,11 @@ NumDynamics supports multiple distribution types to meet various random number g
 ```
 NumDynamics/
 ├── CODE/
-│   ├── random_number_generator.c    # Core C program
-│   ├── calculate_statistics.py      # Statistical analysis
-│   └── generate_histogram_data.py   # Visualization script
+│   ├── random_gen.c                 # Core C program
+│   ├── stats.c                      # Statistical analysis
+│   └── histogram_generator.py       # Visualization script
 │   └── Makefile                     # Build automation
-├── DATA/                           # Generated datasets
+├── DATA/                            # Generated datasets
 │   ├── Scenario1/
 │   ├── Scenario2/
 │   └── Scenario3/
@@ -102,17 +108,20 @@ NumDynamics/
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/numdynamics.git
-   cd numdynamics
+   cd CODE
    ```
 
 2. Install Python dependencies:
    ```bash
-   pip install numpy matplotlib scipy
+    brew install gcc
+    brew install python
+    pip3 install numpy matplotlib scipy
    ```
 
 3. Compile and run:
    ```bash
    make
+   ./ass1
    ```
 
 4. Clean generated files (optional):
@@ -127,22 +136,22 @@ NumDynamics/
 ### Basic Usage
 ```bash
 # Generate numbers with default parameters
-./random_number_generator
+./random_gen
 
 # Analyze generated data
-python calculate_statistics.py
+./stats
 
 # Generate visualizations
-python generate_histogram_data.py
+python histogram_generator.py
 ```
 
 ### Custom Parameters
 ```bash
 # Generate numbers with custom range
-./random_number_generator -min 1 -max 100 -n 1000
+./random_gen -min 1 -max 100 -n 1000
 
 # Generate normal distribution
-./random_number_generator -dist normal -mean 50 -std 10
+./random_gen -dist normal -mean 50 -std 10
 ```
 
 ---
