@@ -40,10 +40,10 @@ NumDynamics is a sophisticated random number generation system that produces hig
 ---
 
 
-<div style="display: flex; justify-content: center; gap: 10px;">
-    <img src="https://github.com/user-attachments/assets/d7cd5783-fb16-477d-86f4-a42c9e1d80e2" alt="Screenshot 1" width="293">
-    <img src="https://github.com/user-attachments/assets/33e4ad8e-aba3-4a2a-b4eb-971bbc4dd8f0" alt="Screenshot 2" width="293">
-    <img src="https://github.com/user-attachments/assets/d6c39bae-aaa9-488f-a291-b22cc274185f" alt="Screenshot 3" width="303">
+<div style="display: flex; justify-content: center; gap: 20px;">
+    <img src="https://github.com/user-attachments/assets/d7cd5783-fb16-477d-86f4-a42c9e1d80e2" alt="Screenshot 1" width="250">
+    <img src="https://github.com/user-attachments/assets/33e4ad8e-aba3-4a2a-b4eb-971bbc4dd8f0" alt="Screenshot 2" width="250">
+    <img src="https://github.com/user-attachments/assets/d6c39bae-aaa9-488f-a291-b22cc274185f" alt="Screenshot 3" width="250">
 </div>
 
 
