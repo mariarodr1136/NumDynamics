@@ -1,0 +1,5 @@
+#!/bin/bash
+rm -rf HISTOGRAM
+./random_gen
+./stats
+python3 histogram_generator.py
